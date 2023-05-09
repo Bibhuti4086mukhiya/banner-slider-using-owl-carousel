@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banner Slide</title>
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- animate link -->
+    <link rel="stylesheet" href="css/animate.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,100;1,700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .container {
+            padding: 200px 200px 0 200px;
+            text-align: center;
+        }
+
+        .container h1 {
+            font-size: 50px;
+            font-weight: 700;
+            color: white;
+        }
+
+        .container p {
+            font-weight: 300;
+            color: white;
+            /* text-align: justify; */
+
+        }
+
+        .banner-btn {
+
+            margin-top: 40px;
+
+        }
+
+        .banner-btn>#banner-about-us-btn {
+            background-color: green;
+            border: 2px solid green;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-right: 40px;
+            text-decoration: none;
+            color: white;
+            transition: all 0.45s ease-in-out;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .banner-btn>#banner-contact-btn {
+            background-color: blue;
+            border: 2px solid blue;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            color: white;
+            transition: all 0.45s ease-in-out;
+            font-weight: bold;
+            font-size: 18px;
+
+
+        }
+
+        .banner-btn>#banner-about-us-btn:hover {
+            background-color: transparent;
+            color: green;
+        }
+
+        .banner-btn>#banner-contact-btn:hover {
+            background-color: transparent;
+            color: blue;
+        }
+
+        .owl-dots {
+            position: absolute;
+            width: 100%;
+            /* top:  auto; */
+            bottom: 50px;
+
+        }
+
+        .owl-nav .owl-prev,
+        .owl-nav .owl-next {
+            position: absolute;
+            top: 50%;
+        }
+
+        .owl-nav .owl-prev {
+            left: 0 !important;
+            font-size: 50px !important;
+        }
+
+        .owl-nav .owl-next {
+            right: 0 !important;
+            font-size: 50px !important;
+        }
+
+        .owl-nav .owl-next:hover {
+            background: transparent !important;
+        }
+
+        .owl-nav .owl-prev:hover {
+            background: transparent !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div class="section1 owl-carousel owl-theme">
+            <!-- banner-1 -->
+            <div clss="image-div"
+                style="background-image: url('img/banner-1.webp'); background-size: cover; height: 90vh; width: 100%;">
+                <div class="container">
+                    <h1 class="animate-h1">Do something new Everyday...</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore aperiam perspiciatis in at vero
+                        molestias. Nihil fugit quidem excepturi nam ipsa nisi molestiae placeat reiciendis maxime
+                        deleniti illum voluptas dignissimos consequuntur adipisci nemo vero assumenda culpa esse, ex
+                        aliquid. Eos id impedit laborum fugit laudantium, unde fuga autem nobis eaque.
+                    </p>
+                    <div class="banner-btn">
+                        <a href="" id="banner-about-us-btn">About us</a>
+                        <a href="" id="banner-contact-btn">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <!-- banner-2 -->
+            <div class="image-div"
+                style="background-image: url('img/banner-2.jpg'); background-size: cover; height: 90vh; width: 100%;">
+                <div class="container">
+                    <h1 class="animate-h1 ">Do something new Everyday...</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore aperiam perspiciatis in at vero
+                        molestias. Nihil fugit quidem excepturi nam ipsa nisi molestiae placeat reiciendis maxime
+                        deleniti illum voluptas dignissimos consequuntur adipisci nemo vero assumenda culpa esse, ex
+                        aliquid. Eos id impedit laborum fugit laudantium, unde fuga autem nobis eaque.
+                    </p>
+                    <div class="banner-btn">
+                        <a href="" id="banner-about-us-btn">About us</a>
+                        <a href="" id="banner-contact-btn">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <!-- banner-3 -->
+            <div class="image-div"
+                style="background-image: url('img/banner-3.jpg'); background-size: cover; height: 90vh; width: 100%;">
+                <div class="container">
+                    <h1 class="animate-h1">Do something new Everyday...</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore aperiam perspiciatis in at vero
+                        molestias. Nihil fugit quidem excepturi nam ipsa nisi molestiae placeat reiciendis maxime
+                        deleniti illum voluptas dignissimos consequuntur adipisci nemo vero assumenda culpa esse, ex
+                        aliquid. Eos id impedit laborum fugit laudantium, unde fuga autem nobis eaque.
+                    </p>
+                    <div class="banner-btn">
+                        <a href="" id="banner-about-us-btn">About us</a>
+                        <a href="" id="banner-contact-btn">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <!-- banner-4 -->
+            <div class="image-div"
+                style="background-image: url('img/banner-4.jpg'); background-size: cover; height: 90vh; width: 100%;">
+                <div class="container">
+                    <h1 class="animate-h1 ">Do something new Everyday...</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore aperiam perspiciatis in at vero
+                        molestias. Nihil fugit quidem excepturi nam ipsa nisi molestiae placeat reiciendis maxime
+                        deleniti illum voluptas dignissimos consequuntur adipisci nemo vero assumenda culpa esse, ex
+                        aliquid. Eos id impedit laborum fugit laudantium, unde fuga autem nobis eaque.
+                    </p>
+                    <div class="banner-btn">
+                        <a href="" id="banner-about-us-btn">About us</a>
+                        <a href="" id="banner-contact-btn">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="p-5">
+            <div class="card-group text-center">
+                <div class="card">
+                    <!-- <img src="..." class="card-img-top" alt="..."> -->
+                    <div class="card-body">
+                        <h5 class="card-title">Location</h5>
+                        <span class="card-center">
+                            <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
+                        </span>
+                        <p>1 East Broad Street Suite 130-1169 Bethlehem, PA 18018</p>
+                        <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                    </div>
+                </div>
+                <div class="card">
+                    <!-- <img src="..." class="card-img-top" alt="..."> -->
+                    <div class="card-body">
+                        <h5 class="card-title">Email</h5>
+                        <span class="card-text">
+                            <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+                        </span>
+                        <p>ellesconsult@outlook.com</p>
+                        <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                    </div>
+                </div>
+                <div class="card">
+                    <!-- <img src="..." class="card-img-top" alt="..."> -->
+                    <div class="card-body">
+                        <h5 class="card-title">Phone</h5>
+                        <span class="card-center">
+                            <i class="fa fa-phone-square fa-2x" aria-hidden="true"></i>
+                        </span>
+                        <p>(800)355-3111</p>
+                        <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14133.18995928051!2d85.3355453624521!3d27.67719887607936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19f2804a02bf%3A0x85468199859b2d8d!2sKoteshwor%2C%20Kathmandu%2044600!5e0!3m2!1sen!2snp!4v1651089798161!5m2!1sen!2snp"
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="footer-section p-5 d-flex">
+            <div class="col-lg-4">
+                <div class="text-center">
+                    <img src="img/banner-1.webp" style="width: 25%;" alt="">
+                </div>
+                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor aperiam corrupti
+                    laborum! Explicabo, deleniti. Recusandae rerum accusamus quae assumenda beatae!</p>
+            </div>
+            <div class="col-lg-2">
+                <h3>Quick Links</h3>
+                <ul style="list-style: none">
+                    <li>home</li>
+                    <li>contact</li>
+                    <li>about us</li>
+                    <li>services</li>
+                </ul>
+            </div>
+            <div class="col-lg-3">
+                <h3>Contact Info</h3>
+                <ul style="list-style: none">
+                    <li>1 East Broad Street Suite 130-1169 Bethlehem, PA 18018</li>
+                    <li>(800)355-3111</li>
+                    <li>ellesconsult@outlook.com</li>
+                    <li>Business Hours: 10:00 - 17:00</li>
+                </ul>
+            </div>
+            <div class="col-lg-3">
+                <h3>Our Location</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14133.18995928051!2d85.3355453624521!3d27.67719887607936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19f2804a02bf%3A0x85468199859b2d8d!2sKoteshwor%2C%20Kathmandu%2044600!5e0!3m2!1sen!2snp!4v1651089798161!5m2!1sen!2snp"
+                    width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+    <Script src="js/jquery-3.6.0.min.js"></Script>
+    <Script src="js/"></Script>
+
+    <script src="js/owl.carousel.min.js"></script>
+    <script>
+
+
+        $(document).ready(function () {
+
+            $('.section1').owlCarousel({
+                loop: true,
+                // margin:10,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                nav: true,
+                navText: ["<i class='fa fa-chevron-left' style='padding:10px;' aria-hidden='true'></i>", "<i class='fa fa-chevron-right' style='padding:10px;'  aria-hidden='true'></i>"],
+                responsiveClass: true,
+                
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: true
+                    },
+                    600: {
+                        items: 1,
+
+                    },
+                    1000: {
+                        items: 1,
+                        nav: true,
+
+                    }
+                }
+            })
+
+
+        });  
+
+
+               
+
+
+
+    </script>
+</body>
+
+</html>
